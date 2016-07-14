@@ -5,6 +5,8 @@
 
 just clone this via 
 
-> git clone https://github.com/gixxi/lambdaroyal-emacs.git .emacs
+> git clone https://github.com/gixxi/lambdaroyal-emacs.git .emacs.d
+
+within your home dir
 
 and run the show!
