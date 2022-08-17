@@ -16,10 +16,6 @@
 ;;                          ("melpa" . "http://melpa-stable.milkbox.net/packages/")))
 
 
-;; Load and activate emacs packages. Do this first so that the
-;; packages are loaded before you start trying to modify them.
-;; This also sets the load path.
-(package-initialize)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
@@ -133,8 +129,9 @@
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
  '(custom-safe-themes
-   (quote
-    ("1157a4055504672be1df1232bed784ba575c60ab44d8e6c7b3800ae76b42f8bd" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" default))))
+   '("1157a4055504672be1df1232bed784ba575c60ab44d8e6c7b3800ae76b42f8bd" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" default))
+ '(package-selected-packages
+   '(yaml-mode web-mode vs-light-theme tide tagedit spacemacs-theme solarized-theme smex projectile popup-complete paredit markdown-preview-mode magit-popup magit js2-mode ido-ubiquitous grip-mode ghub clojure-mode-extra-font-locking async ac-cider)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

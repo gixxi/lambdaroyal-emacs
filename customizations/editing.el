@@ -72,3 +72,6 @@
 ;;(global-auto-complete-mode t)
 
 (tool-bar-mode -1)
+
+
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-find-file)
