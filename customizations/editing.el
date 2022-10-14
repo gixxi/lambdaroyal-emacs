@@ -72,3 +72,18 @@
 ;;(global-auto-complete-mode t)
 
 (tool-bar-mode -1)
+
+;; F8 for lambda
+(global-set-key (kbd "<f8>") (lambda () (interactive) (insert "λ")))
+
+;; F9 for element of
+(global-set-key (kbd "<f9>") (lambda () (interactive) (insert "∈")))
+
+;; F10 for every
+(global-set-key (kbd "<f10>") (lambda () (interactive) (insert "∀")))
+
+
+;; emans on blink with ipad has problems with projectile find file poon CTL c p f
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p f") 'projectile-find-file)
+
