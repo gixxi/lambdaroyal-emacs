@@ -15,10 +15,6 @@
 ;;                          ("melpa" . "http://melpa-stable.milkbox.net/packages/")))
 
 
-;; Load and activate emacs packages. Do this first so that the
-;; packages are loaded before you start trying to modify them.
-;; This also sets the load path.
-(package-initialize)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
