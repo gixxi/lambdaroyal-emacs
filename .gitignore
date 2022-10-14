@@ -4,3 +4,11 @@ backups/
 elpa/
 projectile-bookmarks.eld
 places
+session*
+ac-comphist.dat
+auto-save-list/
+ido.last*
+projectile.cache*
+tramp*
+eln-cache/
+*~
