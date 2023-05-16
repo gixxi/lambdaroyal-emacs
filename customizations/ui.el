@@ -23,7 +23,7 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'solarized-dark t)
+(load-theme 'spacemacs-dark t)
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
@@ -68,6 +68,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-(defvar font "DejaVu Sans Mono-9")
+(defvar font "DejaVu Sans Mono-12")
 (set-face-attribute 'default nil :font font)
 (set-frame-font font nil t)
