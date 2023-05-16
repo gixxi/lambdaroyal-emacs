@@ -29,7 +29,7 @@
 (set-face-attribute 'default nil :height 140)
 
 ;; Show line numbers
-(global-display-line-numbers-mode)
+;;(global-display-line-numbers-mode)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
@@ -68,6 +68,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-(defvar font "DejaVu Sans Mono-12")
+(defvar font "DejaVu Sans Mono-11")
 (set-face-attribute 'default nil :font font)
 (set-frame-font font nil t)
