@@ -23,13 +23,13 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'solarized-dark t)
+(load-theme 'ef-dark t)
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
 
 ;; Show line numbers
-(global-display-line-numbers-mode)
+;;(global-display-line-numbers-mode)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
@@ -68,6 +68,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-(defvar font "DejaVu Sans Mono-9")
+(defvar font "DejaVu Sans Mono-11")
 (set-face-attribute 'default nil :font font)
 (set-frame-font font nil t)
