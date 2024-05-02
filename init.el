@@ -136,6 +136,7 @@
 (load "setup-org.el")
 (load "xsltproc-mode.el")
 (load "xslt-preview.el")
+(load "print-templating-mode.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
