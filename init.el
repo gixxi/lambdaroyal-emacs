@@ -47,7 +47,7 @@
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
     ;; of ido
-    ido-ubiquitous
+    ido-completing-read+
 
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
@@ -63,7 +63,7 @@
     magit
 
     solarized-theme
-
+    spacemacs-theme
     js2-mode
     web-mode
     tide
@@ -158,15 +158,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-document-title ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif" :height 1.5 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif"))))
- '(org-level-6 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif"))))
- '(org-level-7 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif"))))
- '(org-level-8 ((t (:inherit default :weight bold :foreground "#d0d0d0" :family "Sans Serif"))))
+ '(org-document-title ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.5 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-6 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-7 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-8 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
  '(show-paren-match ((t (:background "#000000" :foreground "red" :weight bold)))))
 (put 'scroll-left 'disabled nil)
 (put 'upcase-region 'disabled nil)
