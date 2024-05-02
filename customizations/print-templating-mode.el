@@ -69,9 +69,5 @@
     "Disable print templating mode."
     (interactive)
     (remove-hook 'after-save-hook #'evaluate-clojure-function-and-display t)
-    (message "Print Templating mode disabled."))
-
-
-  ;; Define your enabling and disabling functions here as well.
-  )
+    (message "Print Templating mode disabled.")))
 
