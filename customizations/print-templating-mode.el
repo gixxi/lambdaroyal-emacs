@@ -27,7 +27,7 @@
                             (let [record (tx/select-first *tx* datatype id)]
                               (binding [pt/*x* record
                                         pt/*escape-character-lambda* pt/escape-latex-characters]
-                                (pt/run* (pt/read* template)))))))"
+                                 (pt/run* (pt/read* template)))))))"
                         print-templating-datatype
                         print-templating-id
                         (replace-regexp-in-string "\"" "\\\\\""
@@ -38,7 +38,7 @@
                                                            (with-current-buffer (get-buffer-create "*Clojure Output*")
                                                              (read-only-mode 0)
                                                              (erase-buffer)
-                                                             (insert value)
+                                                             (insert (replace-regexp-in-string "\\\\n" "\n" value))                                                             
                                                              (read-only-mode 1)
                                                              (display-buffer (current-buffer))))
                                                          nil nil nil))))
