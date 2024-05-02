@@ -67,7 +67,6 @@
     js2-mode
     web-mode
     tide
-    org-bullets
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
