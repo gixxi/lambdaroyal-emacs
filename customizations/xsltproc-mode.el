@@ -9,6 +9,10 @@
  (defvar xsltproc-xslt-file nil
    "Path to the XSLT file to use for the XSLT transformation."))
 
+(defmacro el-comment (&rest body)
+  "Ignore BODY completely during evaluation."
+  nil)
+
 (defun xsltproc-apply (xml-file xslt-file)
   "Run xsltproc with XML-FILE and XSLT-FILE, and display the result in a buffer."
   (when (and xml-file xslt-file)
@@ -16,6 +20,7 @@
           (error-file (make-temp-file "xsltproc-error" nil ".txt"))
           (output-buffer (get-buffer-create xsltproc-output-buffer-name))
           (error-buffer (get-buffer-create "*xsltproc-errors*")))
+      (message (format "Output File %s" output-file))
       (shell-command (format "xsltproc -o %s %s %s 2>%s" output-file xslt-file xml-file error-file))
       (with-current-buffer output-buffer
         (erase-buffer)
@@ -30,6 +35,19 @@
       (if (> (buffer-size error-buffer) 0)
           (display-buffer error-buffer)
         (kill-buffer error-buffer))
+      (el-comment (with-current-buffer output-buffer
+                    (erase-buffer)
+                    (insert-file-contents output-file)
+                    (set-visited-file-name nil)
+                    (set-buffer-modified-p nil)
+                    (xml-mode))
+                  (display-buffer output-buffer)
+                  (with-current-buffer error-buffer
+                    (erase-buffer)
+                    (insert-file-contents error-file))
+                  (if (> (buffer-size error-buffer) 0)
+                      (display-buffer error-buffer)
+                    (kill-buffer error-buffer)))
       (message "Applied XSLT transformation"))))
 
 
