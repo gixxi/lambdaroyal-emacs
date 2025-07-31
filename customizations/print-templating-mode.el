@@ -22,8 +22,9 @@
                         (with-tx @lambdaroyal.vlic.main/system
                           (let [datatype (keyword \"%s\")
                                 id %s
-                                template-filename \"%s\"]
-                            (let [template (slurp template-filename)
+                                template-filename \"%s\"
+                                file (clojure.java.io/as-file template-filename)]
+                            (let [template (slurp file)
                                   record (tx/select-first *tx* datatype id)]
                               (binding [pt/*x* record
                                         pt/*escape-character-lambda* pt/escape-latex-characters]

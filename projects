@@ -1,3 +1,4 @@
 ;;; -*- lisp-data -*-
-(("/home/gix/develop/clojure/rocklog-vlic/")
- ("~/develop/etl/cosanum-firstbase/"))
+(("/home/gix/develop/werner/")
+ ("/home/gix/develop/clojure/rocklog-vlic/")
+ ("/home/gix/develop/etl/cosanum-firstbase/"))
