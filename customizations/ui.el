@@ -68,6 +68,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-(defvar font "DejaVu Sans Mono-12")
+(defvar font "DejaVu Sans Mono-10")
 (set-face-attribute 'default nil :font font)
 (set-frame-font font nil t)
