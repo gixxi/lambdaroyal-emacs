@@ -1,3 +1,4 @@
 ;;; -*- lisp-data -*-
 (("/home/gix/develop/clojure/rocklog-vlic/")
+ ("/home/gix/develop/werner/werner-backend/")
  ("~/develop/etl/cosanum-firstbase/"))
