@@ -166,8 +166,7 @@
            "#70c0b1" "#000000"))
  '(coffee-tab-width 2)
  '(custom-safe-themes
-   '("285d1bf306091644fb49993341e0ad8bafe57130d9981b680c1dbd974475c5c7"
-     "58c996beb973f7e988ee4fd21c367b7a5bbdb0622ddfbbd112672a7b4e3d3b81"
+   '("58c996beb973f7e988ee4fd21c367b7a5bbdb0622ddfbbd112672a7b4e3d3b81"
      "95b0bc7b8687101335ebbf770828b641f2befdcf6d3c192243a251ce72ab1692"
      "306d853c5b47e1baf5e815eb49daa8a46d7f54d3f5ab624f3b30a6c1eb8e1f0c"
      "46c65f6d9031e2f55b919b1486952cddcc8e3ee081ade7eb2ffb6a68a804d30e"
@@ -196,15 +195,30 @@
      default))
  '(fci-rule-color "#2a2a2a")
  '(package-selected-packages
-   '(ac-cider auto-complete-nxml cider cider-hydra
-              clojure-mode-extra-font-locking ef-themes esxml gptel
-              green-is-the-new-black-theme grip-mode ido-ubiquitous
-              js2-mode magit markdown-mode markdown-preview-mode
-              moe-theme monokai-theme paredit popup-complete
-              projectile psgml rainbow-mode smex solarized-theme
-              soothe-theme spacemacs-theme tagedit tide
-              typescript-mode vs-light-theme yaml-mode)))
+   '(ac-cider aggressive-indent cider cider-hydra
+              clojure-mode-extra-font-locking clojure-ts-mode
+              ef-themes green-is-the-new-black-theme grip-mode
+              ido-ubiquitous js2-mode magit markdown-mode
+              markdown-preview-mode moe-theme monokai-theme paredit
+              popup-complete projectile psgml rainbow-delimiters
+              rainbow-mode smex solarized-theme soothe-theme
+              spacemacs-theme tagedit tide typescript-mode
+              vs-light-theme yaml-mode)))
 
-
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-document-title ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.5 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-6 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-7 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(org-level-8 ((t (:inherit default :weight bold :foreground "#b2b2b2" :family "Sans Serif"))))
+ '(show-paren-match ((t (:background "#000000" :foreground "red" :weight bold)))))
 (put 'scroll-left 'disabled nil)
 (put 'upcase-region 'disabled nil)
